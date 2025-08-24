@@ -1,0 +1,30 @@
+🧠 **Project Logic Summary: Loan Application Prediction**
+
+This project focuses on predicting loan application approval status using machine learning, leveraging applicant details.
+
+**1. Data Loading & Inspection**
+- The dataset, containing 598 entries, is loaded from a CSV file.
+- Features include: Gender, Marital Status, Education, Income, Loan Amount, Credit History, and Loan Status.
+
+**2. Preprocessing**
+- **Dropped `Loan_ID`**: This unique identifier was removed as it does not contribute to prediction.
+- **Handled Missing Values**: Missing data in `Dependents`, `LoanAmount`, `Loan_Amount_Term`, and `Credit_History` were imputed using the mean.
+- **Checked for Duplicates**: Data integrity was ensured by verifying the absence of duplicate rows.
+
+**3. Feature Selection**
+- Categorical columns were identified for subsequent visualization and encoding.
+- `Loan_ID` was explicitly excluded from the categorical features list to prevent errors.
+
+**4. Visualization**
+- Bar plots were generated for each categorical column to analyze distribution and potential impact on loan status.
+
+**5. Model Building**
+- Four machine learning classifiers were trained:
+    - K-Nearest Neighbors (KNN)
+    - Random Forest Classifier (RFC)
+    - Support Vector Classifier (SVC)
+    - Logistic Regression (LC)
+- Each model's accuracy was evaluated on the training data.
+
+**6. Model Evaluation**
+- The accuracy scores for each trained model were displayed.
